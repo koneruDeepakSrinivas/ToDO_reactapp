@@ -1,0 +1,85 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#chart {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 22px); /* Account for padding and border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff; /* Bootstrap primary color */
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 5px 0;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #f9f9f9; /* Light background on hover */
+}
+
+span {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+span.completed {
+  text-decoration: line-through;
+  color: #aaa; /* Light color for completed tasks */
+}
+
+button.remove {
+  background-color: #dc3545; /* Bootstrap danger color */
+}
+
+button.remove:hover {
+  background-color: #c82333; /* Darker shade for hover */
+}
